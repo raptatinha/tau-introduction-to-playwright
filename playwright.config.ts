@@ -54,6 +54,14 @@ export default defineConfig({
     // ignoreHTTPSErrors: true,
     // viewport: { width: 1280, height: 720 },
     // video: 'on-first-retry',
+    // timeout: 30000, //https://playwright.dev/docs/test-timeouts
+    // expect: {
+      /**
+       * Maximum time expect() should wait for the condition to be met.
+       * For example in `await expect(locator).toHaveText();`
+       */
+      // timeout: 10000,
+    // },
   },
     // timeout: 30000, //https://playwright.dev/docs/test-timeouts
     // expect: {
@@ -63,6 +71,9 @@ export default defineConfig({
        */
       // timeout: 10000,
     // },
+
+  /* Folder for test artifacts such as screenshots, videos, traces, etc. */
+  // outputDir: 'test-results/',
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
   // outputDir: 'test-results/',
