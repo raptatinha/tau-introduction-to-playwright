@@ -59,15 +59,15 @@ test.describe.skip('Test Case', () => {
         // Assert
     });
 
-    test.only('Test Scenario Three', async ({ page }) => {
-        // Arrange
-        // Act
-        // Assert
-    });
+    // test.only('Test Scenario Three', async ({ page }) => {
+    //     // Arrange
+    //     // Act
+    //     // Assert
+    // });
 
-    test.skip('Test Scenario Four', async ({ page }) => {
-        // Arrange
-        // Act
-        // Assert
-    });
+    // test.skip('Test Scenario Four', async ({ page }) => {
+    //     // Arrange
+    //     // Act
+    //     // Assert
+    // });
   });
