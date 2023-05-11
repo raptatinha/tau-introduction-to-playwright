@@ -21,7 +21,7 @@ export default defineConfig({
 
   /* Retry on CI only */
   // retries: process.env.CI ? 2 : 0,
-  retries: 3,
+  retries: 2,
 
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
