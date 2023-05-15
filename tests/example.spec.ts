@@ -25,6 +25,8 @@ test('get started link', async ({ page }) => {
  * 4. Click at  Java
  * 5. Check the URL 
  * 6. Check the text "Installing Playwright" is not being displayed
- * 7. Check the menu elements new order
- * 8. Check the right side menu
+ * 7. Check the text below is displayed
+ * 
+ * Playwright is distributed as a set of Maven modules. The easiest way to use it is to add one dependency to your project's pom.xml as described below. If you're not familiar with Maven please refer to its documentation.
+ * 
  */
