@@ -38,7 +38,8 @@ test('check Java page', async ({ page }) => {
 
   await page.getByRole('link', {name: 'Get started'}).click();
   await page.getByRole('button', {name: 'Node.js'}).hover();
-  await page.getByRole('navigation', { name: 'Main' }).getByText('Java').click();
+  await page.getByText('Java', { exact:true }).click();
+  // await page.getByRole('navigation', { name: 'Main' }).getByText('Java').click(); // in case the locator above doesn't work, you can use this line. Remove the line above and use this one instead.
 
   await expect(page).toHaveURL('https://playwright.dev/java/docs/intro');
   await expect(page.getByText('Installing Playwright', {exact:true})).not.toBeVisible();
