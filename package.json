@@ -3,11 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:e2e": "npx playwright test tests/",
+    "test:e2e:all": "npx playwright test tests --project=all-browsers-and-tests",
+    "test:e2e:ci": "CI=1 npx playwright test --project=ci --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL",
+    "test:e2e:dev": "npx playwright test tests-examples/ --project=chromium --headed --retries=0 --reporter=line",
+    "test:e2e:smoke": "npx playwright test tests-examples/ --grep @smoke --project=chromium",
+    "test:e2e:non-smoke": "npx playwright test tests-examples/ --grep-invert @smoke --project=firefox"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.33.0"
+    "@playwright/test": "^1.33.0",
+    "dotenv": "^16.0.3"
   }
 }
