@@ -22,3 +22,4 @@ test('check Java page', async ({ page }) => {
   const javaDescription = `Playwright is distributed as a set of Maven modules. The easiest way to use it is to add one dependency to your project's pom.xml as described below. If you're not familiar with Maven please refer to its documentation.`;
   await expect(page.getByText(javaDescription)).toBeVisible();
 });
+
