@@ -40,6 +40,8 @@ test.afterEach( async ({ page }, testInfo) => {
     // clean up all the data we created for this test through API calls
 });
 
+// test.describe('Test Case', () => {
+// test.describe.only('Test Case', () => {
 test.describe.skip('Test Case', () => {
     test('Test Scenario One', async ({ page }) => {
         await test.step('Step One', async () => {
@@ -58,16 +60,20 @@ test.describe.skip('Test Case', () => {
         // Act
         // Assert
     });
+/**
+    test.only('Test Scenario Three', async ({ page }) => {
+        // Arrange
+        // Act
+        // Assert
+    });
+ */  
+/**
+    test.skip('Test Scenario Four', async ({ page }) => {
+        // Arrange
+        // Act
+        // Assert
+    });
+ */
 
-    // test.only('Test Scenario Three', async ({ page }) => {
-    //     // Arrange
-    //     // Act
-    //     // Assert
-    // });
-
-    // test.skip('Test Scenario Four', async ({ page }) => {
-    //     // Arrange
-    //     // Act
-    //     // Assert
-    // });
   });
+  
