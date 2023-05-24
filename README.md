@@ -5,10 +5,10 @@ Hi 👋🏽!
 Welcome to the course "Introduction to Playwright" by [Renata Andrade](https://testingwithrenata.com/) for the [Test Automation University](https://testautomationu.applitools.com/).
 
 
-- Playwright v1.33.0
-- Node v19.8.1
-- npm v9.6.5
-- VSCode 1.77.3 (Universal)
+Please use the [main README](https://github.com/raptatinha/tau-introduction-to-playwright/blob/main/README.md)
 
-> Recommendation: [Setup your Node.js environment from scratch - for Playwright implementation](https://www.youtube.com/@testingwithrenata)
+💡 Share on LinkedIn something interesting you've learned! Don't forget to tag me [Renata Andrade](https://www.linkedin.com/in/raptatinha/).
 
+💜 If you have questions, feel free to post them on [github](https://github.com/raptatinha/tau-introduction-to-playwright/issues).
+
+Happy Testing 🎭!
