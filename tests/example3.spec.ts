@@ -92,7 +92,6 @@ test.describe('Playwright website', () => {
         await homePage.assertPageTitle();
         // https://applitools.com/docs/api-ref/sdk-api/playwright/js-intro/checksettings
         await eyes.check('Home page', Target.window().fully());
-
     });
     
     test('get started link', async ({ page }) => {
@@ -101,7 +100,6 @@ test.describe('Playwright website', () => {
         // https://applitools.com/docs/api-ref/sdk-api/playwright/js-intro/checksettings#region-match-levels
         // Layout: Check only the layout and ignore actual text and graphics.
         await eyes.check('Get Started page', Target.window().fully().layout());
-
     });
     
     test('check Java page', async ({ page }) => {
@@ -109,8 +107,7 @@ test.describe('Playwright website', () => {
             await clickGetStarted(page);
             await topMenuPage.hoverNode();
             await topMenuPage.clickJava();
-        });
-      
+        });    
         await test.step('Assert', async () => {
             await topMenuPage.assertPageUrl(pageUrl);
             await topMenuPage.assertNodeDescriptionNotVisible();
