@@ -32,7 +32,7 @@ test.beforeAll(async() => {
   }
 
   const runnerName = (USE_ULTRAFAST_GRID) ? 'Ultrafast Grid' : 'Classic runner';
-  Batch = new BatchInfo({name: `Example: Playwright TypeScript with the ${runnerName}`});
+  Batch = new BatchInfo({name: `ACME Project - ${runnerName}`});
 
   Config = new Configuration();
   Config.setBatch(Batch);

@@ -13,6 +13,7 @@ Welcome to the course "Introduction to Playwright" by [Renata Andrade](https://t
 1. https://auth.applitools.com/users/register
 1. https://applitools.com/tutorials/quickstart/web/playwright/typescript
 1. https://applitools.com/docs/topics/overview/using-the-ultrafast-grid.html
+1. https://applitools.com/docs/topics/overview/overview-writing-tests-with-eyes-runner.html
 
 ### More about visual testing
 1. https://testingwithrenata.com/blog/visual-regression/visual-regression-testing-with-applitools/
