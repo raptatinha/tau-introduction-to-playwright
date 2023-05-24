@@ -33,30 +33,26 @@ test.beforeAll(async() => {
 
     if (USE_ULTRAFAST_GRID) {
         Runner = new VisualGridRunner({ testConcurrency: 5 });
+    }
+    else {
+        Runner = new ClassicRunner();
+    }
+    
+    const runnerName = (USE_ULTRAFAST_GRID) ? 'Ultrafast Grid' : 'Classic runner';
+    Batch = new BatchInfo({name: `Playwright website - ${runnerName}`});
+    
+    Config = new Configuration();
+    // Config.setApiKey("<your-api-key>");
+    
+    Config.setBatch(Batch);
+    if (USE_ULTRAFAST_GRID) {
         Config.addBrowser(800, 600, BrowserType.CHROME);
         Config.addBrowser(1600, 1200, BrowserType.FIREFOX);
         Config.addBrowser(1024, 768, BrowserType.SAFARI);
         Config.addDeviceEmulation(DeviceName.iPhone_11, ScreenOrientation.PORTRAIT);
         Config.addDeviceEmulation(DeviceName.Nexus_10, ScreenOrientation.LANDSCAPE);
     }
-    else {
-        Runner = new ClassicRunner();
-    }
 
-    const runnerName = (USE_ULTRAFAST_GRID) ? 'Ultrafast Grid' : 'Classic runner';
-    Batch = new BatchInfo({name: `Playwright website - ${runnerName}`});
-
-    Config = new Configuration();
-    // Config.setApiKey("<your-api-key>");
-
-    Config.setBatch(Batch);
-
-    if (USE_ULTRAFAST_GRID) {
-        // for cross-browser add more browsers/devices
-        Config.addBrowser(800, 600, BrowserType.CHROME);
-        // Config.addBrowser(1600, 1200, BrowserType.FIREFOX);
-        // Config.addDeviceEmulation(DeviceName.iPhone_11, ScreenOrientation.PORTRAIT);
-    }
 });
 
 
