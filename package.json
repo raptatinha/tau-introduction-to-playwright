@@ -9,13 +9,16 @@
     "test:e2e:ci": "CI=1 npx playwright test --project=ci --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL",
     "test:e2e:dev": "npx playwright test tests-examples/ --project=chromium --headed --retries=0 --reporter=line",
     "test:e2e:smoke": "npx playwright test tests-examples/ --grep @smoke --project=chromium",
-    "test:e2e:non-smoke": "npx playwright test tests-examples/ --grep-invert @smoke --project=firefox"
+    "test:e2e:non-smoke": "npx playwright test tests-examples/ --grep-invert @smoke --project=firefox",
+    "test:visual:acme": "npx playwright test example-applitools.spec.ts --project=chromium",
+    "test:visual:playwright": "npx playwright test example3.spec.ts --project=all-browsers-and-tests"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.33.0",
+    "@applitools/eyes-playwright": "^1.17.0",
+    "@playwright/test": "^1.34.2",
     "dotenv": "^16.0.3"
   }
 }
