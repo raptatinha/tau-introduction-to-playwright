@@ -198,7 +198,8 @@ test.describe('@smoke - Editing', () => {
   });
 
   test('should hide other controls when editing', async ({ page }) => {
-    const todoItem = page.getByTestId('todo-item').nth(1);
+    // const todoItem = page.getByTestId('todo-item').nth(1);
+    const todoItem = page.getByTestId('todo-item'); // intentionally changed here to fail the test
     await todoItem.dblclick();
     await expect(todoItem.getByRole('checkbox')).not.toBeVisible();
     await expect(todoItem.locator('label', {
