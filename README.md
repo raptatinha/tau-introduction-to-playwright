@@ -12,7 +12,10 @@ Welcome to the course "Introduction to Playwright" by [Renata Andrade](https://t
 - VSCode 1.77.3 (Universal)
 - Applitools v1.17.0
 
-> Recommendation: [Setup your Node.js environment from scratch - for Playwright implementation](https://www.youtube.com/@testingwithrenata)
+> Pre requirements: 
+- [Node setup](https://nodejs.dev/en/learn/how-to-install-nodejs/)
+- [VS Code setup](https://code.visualstudio.com/learn/get-started/basics)
+- [iTerm setup](https://iterm2.com/documentation-one-page.html)
 
 ## Fork and clone the project
 
