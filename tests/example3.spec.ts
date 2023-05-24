@@ -90,15 +90,16 @@ test.describe('Playwright website', () => {
 
     test('has title', async () => {
         await homePage.assertPageTitle();
+        // https://applitools.com/docs/api-ref/sdk-api/playwright/js-intro/checksettings
         await eyes.check('Home page', Target.window().fully());
 
     });
     
     test('get started link', async ({ page }) => {
-        // Act
         await clickGetStarted(page);
-        // Assert
         await topMenuPage.assertPageUrl(pageUrl);
+        // https://applitools.com/docs/api-ref/sdk-api/playwright/js-intro/checksettings#region-match-levels
+        // Layout: Check only the layout and ignore actual text and graphics.
         await eyes.check('Get Started page', Target.window().fully().layout());
 
     });
@@ -114,8 +115,9 @@ test.describe('Playwright website', () => {
             await topMenuPage.assertPageUrl(pageUrl);
             await topMenuPage.assertNodeDescriptionNotVisible();
             await topMenuPage.assertJavaDescriptionVisible();
-            // TODO change here
-            await eyes.check('Java page', Target.window().fully().layout());
+            // https://applitools.com/docs/api-ref/sdk-api/playwright/js-intro/checksettings#region-match-levels
+            // Ignore colors: Similar to the strict match level but ignores changes in colors.
+            await eyes.check('Java page', Target.window().fully().ignoreColors());
         });
     });
 });
