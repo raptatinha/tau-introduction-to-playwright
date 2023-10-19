@@ -38,3 +38,23 @@ ___
 💜 If you have questions, feel free to post them on [github](https://github.com/raptatinha/tau-introduction-to-playwright/issues).
 
 Happy Testing 🎭
+
+2. `npm init playwright@latest`
+
+This should install the latest version of playwright onto your machine
+
+3. Download the extension 'Playwright Test for VSCode
+
+Be sure to install the one created by Microsoft
+
+4. Verify config file has testDir: './tests'
+
+Use this line key: value set to run tests in the test runner of VSCode
+
+5. `npx playwright test`
+
+Run this command to execute all your tests
+
+6. `npx playwright show-report`
+
+Run this command to see an HTML report of the test results

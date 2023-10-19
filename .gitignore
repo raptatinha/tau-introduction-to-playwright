@@ -6,3 +6,6 @@ node_modules/
 /playwright/.cache/
 
 *.env
+/test-results/
+/playwright-report/
+/playwright/.cache/

@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "workbench.colorTheme": "Default Dark+",
+  "terminal.integrated.fontFamily": "MesloLGS NF"
+}
