@@ -14,7 +14,7 @@ test.describe('Example Tests', () => {
     await expect(page).toHaveURL(/.*intro/);
   });
 
-  test('check Java page', async ({ page }) => {
+  test.only('check Java page', async ({ page }) => {
     await page.getByRole('link', { name: 'Get started' }).click();
     await page.getByRole('button', { name: 'Node.js' }).hover();
     await page.getByLabel('Main', { exact: true }).getByText('Java').click();
