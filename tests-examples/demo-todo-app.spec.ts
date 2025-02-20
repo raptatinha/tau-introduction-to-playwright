@@ -11,7 +11,7 @@ const TODO_ITEMS = [
 ];
 
 test.describe('New Todo', () => {
-  test('@smoke - should allow me to add todo items ', async ({ page }) => {
+  test.only('@dev_lp - should allow me to add todo items ', async ({ page }) => {
     // create a new todo locator
     const newTodo = page.getByPlaceholder('What needs to be done?');
 
@@ -21,7 +21,7 @@ test.describe('New Todo', () => {
 
     // Make sure the list only has one todo item.
     await expect(page.getByTestId('todo-title')).toHaveText([
-      TODO_ITEMS[1] // intentionally changed here to fail the test
+      TODO_ITEMS[0] // intentionally changed here to fail the test
     ]);
 
     // Create 2nd todo.

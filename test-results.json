@@ -1,0 +1,229 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\luis.pineda\\Documents\\Programacion\\Playwright\\TAU_PW\\tau-introduction-to-playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "all-browsers-and-tests",
+        "name": "all-browsers-and-tests",
+        "testDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "all-browsers-and-tests1",
+        "name": "all-browsers-and-tests",
+        "testDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "all-browsers-and-tests2",
+        "name": "all-browsers-and-tests",
+        "testDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "local",
+        "name": "local",
+        "testDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "ci",
+        "name": "ci",
+        "testDir": "C:/Users/luis.pineda/Documents/Programacion/Playwright/TAU_PW/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.33.0",
+    "workers": 3,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\example.spec.ts",
+      "file": "tests/example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "check Java page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "all-browsers-and-tests",
+              "projectName": "all-browsers-and-tests",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 2366,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-02-20T22:43:29.401Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "all-browsers-and-tests1",
+              "projectName": "all-browsers-and-tests",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 4084,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-02-20T22:43:29.438Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "all-browsers-and-tests2",
+              "projectName": "all-browsers-and-tests",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 3430,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-02-20T22:43:29.465Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3a1b63342050f33a2cc-71d0dde2cfe9348e6d4c",
+          "file": "tests/example.spec.ts",
+          "line": 35,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
