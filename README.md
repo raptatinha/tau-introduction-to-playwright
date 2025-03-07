@@ -31,6 +31,10 @@ On your terminal, type:
 
 IMPORTANT: to run the tests from `main`, you'll need to setup your [.env](.env) following the [.env.example](.env.example), otherwise many tests will fail - this setup is explained in the Chapter 4 video. The recommendation is to access each branch (`git checkout [branchname]`) and run the tests from the branch.
 
+2. `npm install dotenv`
+
+This intsalls the require module for `require('dotenv').config();` line in the config file.
+
 ___
 
 💡 Share on LinkedIn something interesting you've learned! Don't forget to tag me [Renata Andrade](https://www.linkedin.com/in/raptatinha/).
