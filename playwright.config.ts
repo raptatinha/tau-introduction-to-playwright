@@ -5,7 +5,8 @@ import baseEnvUrl from './utils/environmentBaseUrl';
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-require('dotenv').config();
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 /**
  * See https://playwright.dev/docs/test-configuration.
