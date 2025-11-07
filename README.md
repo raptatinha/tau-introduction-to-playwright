@@ -23,7 +23,7 @@ Welcome to the course "Introduction to Playwright" by [Renata Andrade](https://t
 1. Fork the project following the [GitHub instructions](https://docs.github.com/en/get-started/quickstart/fork-a-repo) - (use the parameter --clone=true);
 1. Access the forked project `cd tau-introduction-to-playwright`
 
-## Instal the project
+## Install the project
 
 On your terminal, type:
 
