@@ -14,7 +14,7 @@
     "test:visual:playwright": "npx playwright test example3.spec.ts --project=all-browsers-and-tests"
   },
   "keywords": [],
-  "author": "",
+  "author": "",mnkjbkjnj
   "license": "ISC",
   "devDependencies": {
     "@applitools/eyes-playwright": "^1.17.0",
