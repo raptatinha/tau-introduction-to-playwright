@@ -27,7 +27,7 @@ test.beforeEach(async ({ page }, testInfo) => {
     // load params
 });
 
-test.afterAll(async ({ page }, testInfo) => {
+test.afterAll(async () => {
     console.log('Test file completed.');
     // close a DB connection
 });
