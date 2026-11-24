@@ -1,0 +1,50 @@
+name: Course tests
+
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * 1' # every Monday; schedules only run from main
+
+permissions:
+  contents: read
+
+jobs:
+  pull-request:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [24, 26]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm ci
+      - run: npx playwright install --with-deps
+      # Only tests/: tests-examples has failures on purpose for the course
+      - run: npx playwright test tests/ --project=chromium --project=firefox --project=webkit --retries=0 --reporter=list
+
+  all-branches:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        branch: [main, chapter-1, chapter-2, chapter-3, chapter-4, chapter-5]
+        node: [24, 26]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.branch }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm ci
+      - run: npx playwright install --with-deps
+      - run: npx playwright test tests/ --project=chromium --project=firefox --project=webkit --retries=0 --reporter=list
+        env:
+          # Applitools tests are skipped when this secret is not set
+          APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
