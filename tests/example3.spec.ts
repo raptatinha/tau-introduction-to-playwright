@@ -18,6 +18,7 @@ const URL = 'https://playwright.dev/';
 let homePage: HomePage;
 let topMenuPage: TopMenuPage;
 const pageUrl = /.*intro/;
+const javaPageUrl = /.*java\/docs\/intro/;
 
 // Applitools
 // export const USE_ULTRAFAST_GRID: boolean = true;
@@ -109,7 +110,7 @@ test.describe('Playwright website', () => {
             await topMenuPage.clickJava();
         });    
         await test.step('Assert', async () => {
-            await topMenuPage.assertPageUrl(pageUrl);
+            await topMenuPage.assertPageUrl(javaPageUrl);
             await topMenuPage.assertNodeDescriptionNotVisible();
             await topMenuPage.assertJavaDescriptionVisible();
             // https://applitools.com/docs/api-ref/sdk-api/playwright/js-intro/checksettings#region-match-levels
