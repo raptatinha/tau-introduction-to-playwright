@@ -30,7 +30,7 @@ Welcome to the course "Introduction to Playwright" by [Renata Andrade](https://t
 ### Most used commands
 1. .click()
 1. .fill()
-1. .type()
+1. .pressSequentially()
 1. .check()
 1. .uncheck()
 1. .keyboard.press(<key>)
