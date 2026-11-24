@@ -23,6 +23,7 @@ export class TopMenuPage {
 
     async assertInstallationVisible() {
         await expect(this.installationHeading).toBeVisible();
+        await expect(this.page.locator('#nprogress')).toHaveCount(0); // loading bar at the top of the page
     }
 
     async hoverNode() {
