@@ -21,7 +21,7 @@ export let Runner: EyesRunner;
 let eyes: Eyes;
 let URL = 'https://demo.applitools.com';
 // let URL = 'https://demo.applitools.com/index_v2.html';
-
+test.skip(!process.env.APPLITOOLS_API_KEY, 'Set APPLITOOLS_API_KEY in your .env file to run the visual tests.');
 test.beforeAll(async() => {
 
   if (USE_ULTRAFAST_GRID) {

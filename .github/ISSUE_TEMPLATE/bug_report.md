@@ -7,6 +7,8 @@ assignees: raptatinha
 
 ---
 
+> Before opening an issue, please take a look at [Troubleshooting](https://github.com/raptatinha/tau-introduction-to-playwright/blob/main/TROUBLESHOOTING.md).
+
 **🐞 Describe the bug:**
 A clear and concise description of what the bug is.
 

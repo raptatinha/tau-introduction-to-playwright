@@ -1,0 +1,50 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    target-branch: main
+    schedule:
+      interval: monthly
+    groups:
+      all:
+        patterns: ["*"]
+  - package-ecosystem: npm
+    directory: /
+    target-branch: chapter-1
+    schedule:
+      interval: monthly
+    groups:
+      all:
+        patterns: ["*"]
+  - package-ecosystem: npm
+    directory: /
+    target-branch: chapter-2
+    schedule:
+      interval: monthly
+    groups:
+      all:
+        patterns: ["*"]
+  - package-ecosystem: npm
+    directory: /
+    target-branch: chapter-3
+    schedule:
+      interval: monthly
+    groups:
+      all:
+        patterns: ["*"]
+  - package-ecosystem: npm
+    directory: /
+    target-branch: chapter-4
+    schedule:
+      interval: monthly
+    groups:
+      all:
+        patterns: ["*"]
+  - package-ecosystem: npm
+    directory: /
+    target-branch: chapter-5
+    schedule:
+      interval: monthly
+    groups:
+      all:
+        patterns: ["*"]
