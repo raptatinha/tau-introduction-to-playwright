@@ -12,7 +12,7 @@ Welcome to the course "Introduction to Playwright" by [Renata Andrade](https://t
 
 1. Take a look at the other existing files (listed below) and try to identify their function in the project:
 - [.gitignore](/.gitignore)
-- [package-lock.json](/package-lock.json)
+- [package.json](/package.json)
 - [package-lock.json](/package-lock.json)
 - [playwright.config.ts](/playwright.config.ts)
 
