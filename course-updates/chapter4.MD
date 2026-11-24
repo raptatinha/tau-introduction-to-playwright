@@ -4,6 +4,7 @@ The video was recorded in 2023. Last reviewed: November 2026.
 
 - **API key:** copy `.env.example` to `.env` and fill in `APPLITOOLS_API_KEY` before running. Without it the Applitools tests are skipped.
 - **Line added:** `test.skip(!process.env.APPLITOOLS_API_KEY, ...)` is not in the video.
+- **Get started test:** `assertInstallationVisible()` is not in the video. It waits for the new page, so the screenshot does not show the previous one.
 - **Dashboard:** the Applitools website and Eyes Test Manager may look different from the video.
 
 ## New in Applitools (optional)

@@ -21,6 +21,10 @@ export class TopMenuPage {
         this.installationHeading = page.getByRole('heading', { name: 'Installation', exact: true });
     }
 
+    async assertInstallationVisible() {
+        await expect(this.installationHeading).toBeVisible();
+    }
+
     async hoverNode() {
         // wait for the new page: the URL changes before the content
         await expect(this.installationHeading).toBeVisible();
