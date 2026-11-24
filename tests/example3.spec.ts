@@ -28,7 +28,7 @@ export let Runner: EyesRunner;
 let eyes: Eyes;
 // end of Applitools
 
-// beforeAll for Applitools
+test.skip(!process.env.APPLITOOLS_API_KEY, 'Set APPLITOOLS_API_KEY in your .env file to run the visual tests.');
 test.beforeAll(async() => {
 
     if (USE_ULTRAFAST_GRID) {
