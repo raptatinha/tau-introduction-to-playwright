@@ -6,6 +6,7 @@ const URL = 'https://playwright.dev/';
 let homePage: HomePage;
 let topMenuPage: TopMenuPage;
 const pageUrl = /.*intro/;
+const javaPageUrl = /.*java\/docs\/intro/;
 
 test.beforeEach(async ({page}) => {
     await page.goto(URL);
@@ -38,7 +39,7 @@ test.describe('Playwright website', () => {
         });
       
         await test.step('Assert', async () => {
-            await topMenuPage.assertPageUrl(pageUrl);
+            await topMenuPage.assertPageUrl(javaPageUrl);
             await topMenuPage.assertNodeDescriptionNotVisible();
             await topMenuPage.assertJavaDescriptionVisible();
         });

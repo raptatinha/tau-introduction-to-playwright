@@ -18,6 +18,7 @@ const URL = 'https://playwright.dev/';
 let homePage: HomePage;
 let topMenuPage: TopMenuPage;
 const pageUrl = /.*intro/;
+const javaPageUrl = /.*java\/docs\/intro/;
 
 // Applitools
 // export const USE_ULTRAFAST_GRID: boolean = true;
@@ -28,7 +29,7 @@ export let Runner: EyesRunner;
 let eyes: Eyes;
 // end of Applitools
 
-// beforeAll for Applitools
+test.skip(!process.env.APPLITOOLS_API_KEY, 'Set APPLITOOLS_API_KEY in your .env file to run the visual tests.');
 test.beforeAll(async() => {
 
     if (USE_ULTRAFAST_GRID) {
@@ -97,6 +98,7 @@ test.describe('Playwright website', () => {
     test('get started link', async ({ page }) => {
         await clickGetStarted(page);
         await topMenuPage.assertPageUrl(pageUrl);
+        await topMenuPage.assertInstallationVisible(); // wait for the new page before the screenshot
         // https://applitools.com/docs/api-ref/sdk-api/playwright/js-intro/checksettings#region-match-levels
         // Layout: Check only the layout and ignore actual text and graphics.
         await eyes.check('Get Started page', Target.window().fully().layout());
@@ -109,7 +111,7 @@ test.describe('Playwright website', () => {
             await topMenuPage.clickJava();
         });    
         await test.step('Assert', async () => {
-            await topMenuPage.assertPageUrl(pageUrl);
+            await topMenuPage.assertPageUrl(javaPageUrl);
             await topMenuPage.assertNodeDescriptionNotVisible();
             await topMenuPage.assertJavaDescriptionVisible();
             // https://applitools.com/docs/api-ref/sdk-api/playwright/js-intro/checksettings#region-match-levels
